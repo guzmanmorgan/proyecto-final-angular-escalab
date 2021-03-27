@@ -3,7 +3,19 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  
+  apiUrl: 'https://finalspaceapi.com/api/v0/',
+  
+  firebaseConfig: {
+    apiKey: "AIzaSyBjbe65BpckRi8HcaPM3cr4JlOW-ogSaBQ",
+    authDomain: "angular-final-escalab.firebaseapp.com",
+    projectId: "angular-final-escalab",
+    storageBucket: "angular-final-escalab.appspot.com",
+    messagingSenderId: "568780064121",
+    appId: "1:568780064121:web:86a1a753164fbf7466dba8",
+    measurementId: "G-SGGX6RVS4C"
+  }
 };
 
 /*

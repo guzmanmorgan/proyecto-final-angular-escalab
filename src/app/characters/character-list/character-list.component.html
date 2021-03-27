@@ -1,0 +1,17 @@
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">{{title}}</h1>
+  <p class="lead">Here you will find all the characters of the series. Press a button to find more 
+    information.</p>
+</div>
+
+<div class="container">
+  <div class="card-columns mb-5">
+    <div class="card" *ngFor="let character of allCharacters; let i = index;">
+      <img src={{character.img_url}} class="card-img-top" alt={{character.name}}>
+        <div class="card-body">
+          <h5 class="card-title"> {{character.name | uppercase}} </h5>
+          <p class="card-text"> Status: {{character.status}} </p>
+        </div>
+    </div>
+  </div>
+</div>

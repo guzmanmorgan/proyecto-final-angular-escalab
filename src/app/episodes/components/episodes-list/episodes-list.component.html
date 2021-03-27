@@ -1,0 +1,25 @@
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">{{title}}</h1>
+  <p class="lead">The series has 3 seasons, and has been broadcast since 2018.</p>
+</div>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Date air</th>
+        <th scope="col">Director</th>
+        <th scope="col">Writter</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let episodes of allEpisodes">
+        <th scope="row">{{episodes.id}}</th>
+        <td>{{episodes.name}}</td>
+        <td>{{episodes.air_date | date}}</td>
+        <td>{{episodes.director}}</td>
+        <td>{{episodes.writer}}</td>
+      </tr>
+    </tbody>
+  </table>

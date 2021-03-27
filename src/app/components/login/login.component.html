@@ -1,0 +1,28 @@
+<form class="form-signin">
+    <div class="text-center mb-4" [formGroup]="loginForm" (ngSubmit)="onLogin()" >
+      <img class="mb-4" src="./../../../assets/final space icon.jpg" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+    </div>
+  
+    <div class="form-label-group">
+      <input type="email" class="form-control" placeholder="email" formControlName="email">
+      <label for="inputEmail">Email address</label>
+    </div>
+  
+    <div class="form-label-group">
+      <input type="text" class="form-control" placeholder="password" formControlName="pass">
+      <label for="inputPassword">Password</label>
+    </div>
+  
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block">Login</button>
+    <p>Don't have account? <a [routerLink]="'/register'" >Sign up here</a></p>
+  </form>
+  <br><br><br>
+
+
+  

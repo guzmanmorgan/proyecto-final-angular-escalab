@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-final-escalab": {
+      "hosting": {
+        "escalab": [
+          "angular-final-escalab"
+        ]
+      }
+    }
+  }
+}
