@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Character } from 'src/app/interfaces/character';
 import { FinalSpaceService } from '../../services/final-space-s.service';
-import { Router } from '@angular/router';
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-character-list',

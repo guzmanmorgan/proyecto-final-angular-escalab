@@ -9,6 +9,7 @@ import { CharactersModule } from './characters/characters.module';
 import { LocationsModule } from './locations/locations.module'
 import { EpisodesModule } from './episodes/episodes.module'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxSpinnerModule } from "ngx-spinner";  
 
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -48,7 +49,8 @@ import { AuthGuard } from '../app/guards/auth.guard'
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgxSpinnerModule
   ],
   providers: [
     FinalSpaceService,
