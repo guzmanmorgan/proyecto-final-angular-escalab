@@ -1,5 +1,7 @@
-<form class="form-signin">
-    <div class="text-center mb-4" [formGroup]="loginForm" (ngSubmit)="onLogin()" >
+<div class="row">
+  
+  <form class="form-signin" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <div class="text-center mb-4">
       <img class="mb-4" src="./../../../assets/final space icon.jpg" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Login</h1>
     </div>
@@ -22,6 +24,7 @@
     <button class="btn btn-lg btn-primary btn-block">Login</button>
     <p>Don't have account? <a [routerLink]="'/register'" >Sign up here</a></p>
   </form>
+</div>
   <br><br><br>
 
 

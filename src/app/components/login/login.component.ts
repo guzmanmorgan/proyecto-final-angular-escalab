@@ -10,6 +10,9 @@ import { FirebaseService }  from '../../services/firebase.service';
 })
 export class LoginComponent implements OnInit {
 
+  get email() { return this.loginForm.get('email') };
+  get pass() { return this.loginForm.get('pass') };
+
   public loginForm = new FormGroup({
     email: new FormControl(''),
     pass: new FormControl('')
@@ -24,6 +27,7 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin() {
+    console.log('submit -->', this.loginForm.value);
     this.firebaseService.login(this.loginForm.value.email, this.loginForm.value.pass).then(resp => {
       console.log('response login -->', resp);
     }).catch(error => {

@@ -24,6 +24,8 @@ import { environment } from '../environments/environment';
 
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
+import { AuthGuard } from '../app/guards/auth.guard'
+
 
 
 @NgModule({
@@ -48,7 +50,10 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [FinalSpaceService],
+  providers: [
+    FinalSpaceService,
+    AuthGuard 
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
